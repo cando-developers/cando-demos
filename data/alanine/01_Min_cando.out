@@ -1,0 +1,58 @@
+
+          -------------------------------------------------------
+          Amber 16 SANDER                              2016
+          -------------------------------------------------------
+
+| Run on 12/04/2017 at 17:30:34
+
+|   Executable path: /Users/meister/Development/amber16/bin/sander
+| Working directory: /Users/meister/Development/cando/extensions/cando/src/lisp/tests/alanine-demo
+|          Hostname: Unknown
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: 01_Min.in                                                             
+| MDOUT: 01_Min_cando.out                                                      
+|INPCRD: alanine_cando.crd                                                     
+|  PARM: alanine_cando.top                                                     
+|RESTRT: restrt                                                                
+|  REFC: refc                                                                  
+| MDVEL: mdvel                                                                 
+| MDFRC: mdfrc                                                                 
+|  MDEN: mden                                                                  
+| MDCRD: mdcrd                                                                 
+|MDINFO: mdinfo                                                                
+|  MTMD: mtmd                                                                  
+|INPDIP: inpdip                                                                
+|RSTDIP: rstdip                                                                
+|INPTRA: inptraj                                                               
+
+
+ Here is the input file:
+
+Minimize                                                                       
+ &cntrl                                                                        
+  imin=1,                                                                      
+  ntb=0,                                                                       
+  igb=0,                                                                       
+  ntx=1,                                                                       
+  ntxo=1,                                                                      
+  irest=0,                                                                     
+  maxcyc=0,                                                                    
+  ncyc=0,                                                                      
+  ntpr=5,                                                                      
+  ntwx=0,                                                                      
+  cut=1000.0,                                                                  
+ /                                                                             
+                                                                               
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+|    NONPERIODIC   ntb=0 and igb=0: Setting up nonperiodic simulation
+|  *** cutoff > system size, list only builds once
+|Largest sphere to fit in unit cell has radius =    32.365
+|  INFO: Old style PARM file read
+

@@ -1,0 +1,481 @@
+;;;
+;;; Initialize everything
+;;;
+
+(progn
+  (defparameter *working-directory* (core:current-dir))
+  (require :asdf)
+  (let ((central-registry (find-symbol "*CENTRAL-REGISTRY*" :asdf))
+        (load-system (find-symbol "LOAD-SYSTEM" :asdf)))
+    (setf (symbol-value central-registry)
+          (cons (translate-logical-pathname "cando:lisp;cando;")
+                (symbol-value central-registry)))
+    (funcall load-system "cando"))
+  (format t "Done initialization pid = ~a~%" (getpid))
+  (setq *print-array* t)
+  (setq *default-pathname-defaults*
+        #P"~/Development/channel-designs/transmembrane03/")
+  (let ((*default-pathname-defaults* (probe-file #P"cando:data;force-field;")))
+    (defparameter *parms*
+      (let ((parms (chem:make-read-amber-parameters)))
+	(with-open-file (fin "ATOMTYPE_GFF.DEF" :direction :input)
+	  (chem:read-types parms fin))
+	(with-open-file (fin "gaff.dat" :direction :input)
+	  (chem:read-parameters parms fin)
+	  parms)))
+    (defparameter *ff* (chem:get-force-field *parms*)))
+  (format t "Done with initialization~%"))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Work with a molecule
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;
+;;; Load the chemdraw file containing a molecule
+;;;
+(progn
+  (setq *default-pathname-defaults* (pathname *working-directory*))
+  (defparameter *cd*
+    (with-open-file
+        (fin (probe-file "trifold3.cdxml") :direction :input)
+      (chem:make-chem-draw fin)))
+  (defparameter *agg* (chem:as-aggregate *cd*))
+  (defparameter *mol* (chem:content-at *agg* 0)))
+
+;;;
+;;; Gather the atoms that are stereocenters into a vector
+;;; and assign them all "S" stereochemistry (#b111...)
+(progn
+  (defparameter *stereocenters*
+    (sort (cando:gather-stereocenters *agg*) #'string< :key #'chem:get-name))
+  (cando:set-stereoisomer-func *stereocenters* (constantly :S) :show t))
+
+(defparameter *fix-atoms*
+  (sort (select:atoms-with-property *agg* :fix) #'string<
+	:key (lambda (a) (string (getf (chem:get-properties a) :fix)))))
+
+(dolist (a *fix-atoms*)
+  (format t "Properties: ~a~%" (chem:get-properties a)))
+
+(let ((macrocycle-points (anchor:circle-points 10 3 :z 40))
+      (top-trifold-points (anchor:circle-points 10 6 :z 20))
+      (bottom-trifold-points (anchor:circle-points 10 6 :z -20)))
+  (defparameter *points* (append macrocycle-points top-trifold-points bottom-trifold-points)))
+
+;;; Anchor the :fix atoms to *fixed-points*
+(anchor:on-points *fix-atoms* *points*)
+
+(energy:setup-amber)
+(cando:jostle *agg* 40)
+(energy:minimize *agg*)
+(energy:minimize *agg* :restraints-on nil)
+
+
+(cando:jostle *agg* 1)
+(energy:minimize *agg*)
+(energy:minimize *agg* :restraints-on nil)
+
+(cando:chimera *agg*)
+
+(cando:save-mol2 *agg* "chanmon3-built.mol2")
+
+
+(defun load-membrane ()
+  "* Description
+Load the membrane from the psf/pdb files and name each of the molecules
+within it based on whether they are solvent (<= 3 atoms) or lipid."
+  (let ((agg-membrane (cando:load-psf-pdb "../transmembrane02/POPC36.psf" "../transmembrane02/POPC36.pdb")))
+    (chem:map-molecules
+     nil
+     (lambda (m)
+       (if (<= (chem:number-of-atoms m) 3)
+	   (chem:set-name m :solvent)
+	   (chem:set-name m :lipid)))
+     agg-membrane)
+    agg-membrane))
+
+
+(defparameter *memb* (load-membrane))
+
+(cando:chimera *memb*)
+
+
+;;;
+;;; Configure the energy function and minimizer
+;;;
+(progn
+  (defparameter *ef* (chem:make-energy-function *agg* *ff*))
+  (defparameter *min* (chem:make-minimizer :energy-function *ef*))
+  (cando:configure-minimizer *min*
+			     :max-steepest-descent-steps 1000
+			     :max-conjugate-gradient-steps 50000
+			     :max-truncated-newton-steps 0)
+  (chem:enable-print-intermediate-results *min*))
+
+;;; Minimize the energy with the nonbond term turned off
+;;; to avoid tangles
+(progn
+  (chem:set-option *ef* 'chem:nonbond-term nil)
+  (minimize-no-fail *min*))
+(cando:chimera *agg*)
+
+;;; Minimize the energy with the nonbond term turned on
+(progn
+  (chem:set-option *ef* 'chem:nonbond-term t)
+  (minimize-no-fail *min*))
+
+(cando:chimera *agg*)
+
+;;; Minimize with the anchor restraint term turned off
+(progn
+  (defparameter *anchor-restraint*
+    (chem:get-anchor-restraint-component *ef*))
+  (chem:disable *anchor-restraint*)
+  (cando:configure-minimizer *min*
+			     :max-steepest-descent-steps 1000
+			     :max-conjugate-gradient-steps 50000
+			     :max-truncated-newton-steps 0
+			     :conjugate-gradients-tolerance 0.3)
+  (minimize-no-fail *min*))
+
+(cando:chimera *agg*)
+
+;;;
+;;; Write out the structure to a Mol2 file
+;;;
+(cando:save-mol2 *agg* "chanmon-built.mol2")
+
+
+(setq *default-pathname-defaults* (pathname *working-directory*))
+
+(defparameter *a* (chem:load-mol2 "chanmon5-built.mol2"))
+(cando:chimera *a*)
+
+
+
+(print "Hello")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; The code below is not currently used
+;;;
+
+(progn
+(getpid)52409
+(clib-backtrace 1000)
+(loop for atom in (atoms-to-fix *agg*)
+     do (format t "~a ~a~%" (chem:get-name atom) (chem:get-position atom)))
+
+(chem:get-properties (car (cando:atoms-with-property *agg* :fix)))
+
+(defparameter *lr* (linked-rings:identify-all-ring-chains *mol*))
+(loop for rings in *lr*
+   do (linked-rings:scramble-linked-rings rings)
+   do (cando:optimize-structure *agg* *ff* (linked-rings:coerce-to-atom-set rings)))
+
+(cando:chimera *agg*)
+
+
+;;;
+;;; Build atom tree
+;;;
+(defparameter *at* (atom-tree:build-atom-tree *mol* :root-property :build-root))
+(atom-tree:find-coupled-dihedrals *at*)
+(atom-tree:assign-coupled-dihedral-angles *at*)
+(loop for rings in *lr*
+     do (atom-tree:extract-internal-coordinates-for-active-set
+         *at* (linked-rings:coerce-to-atom-set rings)))
+
+;;;
+;;; Build geometry using the atom tree
+;;;
+(atom-tree:build-geometry-for-atom-tree *at*)
+(atom-tree:write-geometry-to-atoms *at*)
+(cando:chimera *agg*)
+
+;;;
+;;; Finally clean up the structure
+;;;
+
+(cando:optimize-structure *agg* *ff*)
+(cando:chimera *agg*)
+(cando:jostle-atoms *agg* 0.5)
+(cando:chimera *agg*)
+
+(chem:save-mol2 *agg* "chanmon1.mol2")
+
+
+
+
+
+(defparameter *s* (core:make-cxx-object 'chem:chem-info))
+(chem:compile-smarts *s* "C")
+(defparameter *oa* (car (linked-rings::atoms (car (car *lr*)))))
+(chem:matches *s* *oa*)
+*oa*
+
+
+
+(linked-rings::atoms (car (car *lr*)))
+(linked-rings::atoms (car *lr*))
+(trace linked-rings:atom-set-from-linked-rings)
+(linked-rings::atoms (car (car *lr*)))
+
+
+(print "Testing")
+
+(defparameter *r* (car (cando:atoms-with-property *mol* :build-root)))
+(defparameter *s* (make-cxx-object 'chem:spanning-loop))
+(chem:set-top *s* *r*)
+(chem:next *s* (lambda (a b) t))
+(loop for x = (chem:next *s* (lambda (a b) t)) until (null x) do (print x))
+
+
+
+
+
+(defparameter *rings* (chem:identify-rings *mol*))
+(defparameter *r* (chem:identify-rings *mol*))
+(defparameter *lr* (join-rings *r*))
+(defparameter *rht* (build-ring-hash-table *lr*))
+(defparameter *ir* (gather-isolated-rings *rht*))
+(defparameter *rc* (gather-one-ring-chain *rht*))
+(identify-all-ring-chains *mol*)
+
+(format t "Length of fused-ring: ~a~%" (length *fused-rings*))
+(mapc (lambda (f)
+        (format t "fused-ring: ~a~%" (name f))
+        (format t "Ring: ~a~%" (atoms f))
+        (format t "join: ~a~%" (mapcar (lambda (f) (name f)) (join f))))
+      *fused-rings*)
+      
+
+
+(linked-rings (first *rings*) (second *rings*))
+
+
+
+(defun find-linked-rings (rings)
+  (let ((rings (chem:identify-rings make-ring-finder)))
+    (
+
+
+
+
+
+
+
+(chem:map-residues nil
+                   (lambda (a)
+                     (when (chem:has-property a :constitution)
+                       (format t "Residue: ~a  constitution: ~a~%" (chem:get-name a) (chem:matter-get-property a :constitution))))
+                   *agg*)
+(chem:content-at *agg* 0)
+(chem:get-properties (chem:content-at *agg* 0))
+
+(chem:map-atoms nil (lambda (a) (print a)) (chem:content-at *agg* 0))
+(print (chem:content-at (chem:content-at *agg* 0) 0))
+
+(progn
+  (format t "Residue: ~a~%" (chem:get-name (chem:content-at (chem:content-at *agg* 1) 0)))
+  (chem:map-atoms nil (lambda (a) (print a)) (chem:content-at (chem:content-at *agg* 1) 0)))
+
+(apropos "atoms")
+
+
+;;; Build starting geometry for one stereoisomer
+(build-good-geometry-from-random *agg* *ff*)
+
+
+(load "~/Downloads/quicklisp.lisp")
+(quicklisp-quickstart:install)
+(load #P"/Users/meister/quicklisp/setup.lisp")
+
+
+(print "Doda")
+
+(save-mol2 *agg* #P"test.mol2")
+(chimera *agg*)
+
+;;;
+;;; Build all 32 stereoisomers
+;;;
+(dotimes (i 32)
+  (set-stereoisomer *stereocenters* i :show t)
+  (build-good-geometry-from-random *agg* *ff*)
+  (save-mol2 *agg*
+             (indexed-pathname #P"fuzi/run.mol2" i)))
+
+(clib-backtrace 9999)
+
+;;;
+;;; Load all of the 32 stereoisomers
+;;;
+
+
+(defparameter *all-aggs*
+  (loop for i below 32
+     collect (let ((x (chem:load-mol2 (indexed-pathname #P"fuzi/run.mol2" i))))
+               (chem:set-property x :stereoisomer-index i)
+               x)))
+
+
+(defparameter *all-aggs*
+  (loop for i to 31
+     for x = (chem:load-mol2 (indexed-pathname #P"fuzi/run.mol2" i))
+     do (chem:set-property x :stereoisomer-index i)
+     collect x))
+
+(chimera (find-aggregate *all-aggs* (lambda (a) (= 28 (chem:matter-get-property a :stereoisomer-index)))))
+*all-aggs*
+(loop for x in *all-aggs* do (chimera x))
+
+(dolist (x *all-aggs*)
+  (chimera x))
+
+(defparameter *3o3x* (chem:load-mol2 "fuzi/3o3x.mol2"))
+(defparameter *3o3x-atomspec* "#0:43.A@CA #0:43.A@CB #0:46.A@CA #0:46.A@CB #0:47.A@CA #0:47.A@CB #0:50.A@CA #0:50.A@CB")
+
+(chimera *3o3x*)
+(chimera (car *all-aggs*))
+
+
+(coordinate-array-for-atomspec *3o3x* *3o3x-atomspec*)
+
+(defparameter *agg-atomspec*
+  "#0:1.A@N.z #0:1.A@C.z2
+#0:1.A@C.a #0:1.A@C.a2
+#0:1.A@N.b #0:1.A@C.b2
+#0:1.A@N.d #0:1.A@C.d2")
+
+(chem:atoms-with-chimera-specifications (car *all-aggs*) *agg-atomspec*)
+(coordinate-array-for-atomspec (car *all-aggs*) *agg-atomspec*)
+(dump-atoms (car *all-aggs*))
+
+(defparameter *res*
+  (superpose-against-template :fixed-aggregate *3o3x*
+                              :fixed-atomspec "#0:43.A@CA #0:43.A@CB #0:46.A@CA #0:46.A@CB #0:47.A@CA #0:47.A@CB #0:50.A@CA #0:50.A@CB"
+                              :moveable-aggregates *all-aggs*
+                              :moveable-atomspec "#0:1.A@N.z #0:1.A@C.z2    #0:1.A@C.a #0:1.A@C.a2    #0:1.A@N.b #0:1.A@C.b2    #0:1.A@N.d #0:1.A@C.d2"
+                              :key (lambda (x) (chem:matter-get-property x :stereoisomer-index))))
+
+
+(defparameter *data* (sort (let (res) (maphash (lambda (k v) (push (list k v) res)) *res*) res) (lambda (x y) (< (car x) (car y)))))
+(gnuplot-data *data*)
+
+(defparameter *a* (find-aggregate *all-aggs* (lambda (a) (= 6 (chem:matter-get-property a :stereoisomer-index)))))
+(chimera *a*)
+
+
+(format t "~b~%" 6)
+
+(ext:system "gnuplot -e 'set terminal png; set output \"/tmp/out.png\"; plot sin(x); quit'")
+(ext:system "open /tmp/out.png")
+(print "Hello")
+(gnuplot-data '(1 2 3 4 3 2 1))
+(gnuplot-xy '((1.0 1.0) (2.0 2.0)))
+
+(chimera *agg*)
+
+
+(chimera (car *all-aggs*))
+(chimera (cadr *all-aggs*))
+(chimera (caddr *all-aggs*))
+(chimera (cadddr *all-aggs*))
+
+(defparameter *ca* (chem:make-coordinate-array-from-atom-list *a*))
+
+(setq *se* (core:make-cxx-object 'chem:superpose-engine))
+(chem:set-fixed-all-points *se* *ca*)
+(chem:set-moveable-all-points *se* *ca*)
+(chem:superpose *se*)
+
+
+(cando::array-stereoisomers #P"fuzi/run.mol2" 32)
+
+(cando::chimera #P"fuzi/run_grid.mol2")
+
+(defparameter *energy-function* (chem:make-energy-function *agg* *ff*))
+(dump-atoms *agg*)
+(chem:calculate-energy *energy-function*)
+(defparameter *min* (chem:make-minimizer :energy-function *energy-function*))
+;;(defparameter *min* (chem:make-minimizer :energy-function *energy-function*))
+(chem:minimize *min*)
+(chem:save-mol2 *agg* #P"/tmp/after.mol2")
+
+
+
+(dotimes (stereoisomer (number-of-stereoisomers *stereocenters*))
+  (set-stereoisomer *stereocenters* stereoisomer 31)
+  ;; Do something with the *agg*
+  )
+
+
+(print "Hello")
+;; Do minimization using energy function
+
+
+
+
+
+(setq *print-array* t)
+(make-array 5)
+
+
+
+(let ((p (chem:pdb-writer "/tmp/mol.pdb")))
+  (chem:write p *a*)
+  (chem:close
+(chem:map-atoms (lambda (a) (print a)) *a*)
+
+(defparameter *pattern* (make-cxx-object 'chem:chem-info))
+(chem:compile-smarts *pattern* "C")
+(defparameter *atoms* nil)
+(chem:map-atoms (lambda (a) (push a *atoms*))
+
+(defparameter *parms*
+  (let ((parms (chem:make-read-amber-parameters)))
+    (with-open-file (fin "~/Development/clasp/projects/cando/work/forceField/ATOMTYPE_GFF.DEF" :direction :input)
+      (chem:read-types parms fin))
+    (with-open-file (fin "~/Development/clasp/projects/cando/work/forceField/gaff.dat" :direction :input)
+      (chem:read-parameters parms fin)
+      parms)
+    ))
+(defparameter *ff* (chem:get-force-field *parms*))
+(defparameter *ff-in-str* (as-string (chem:get-force-field *parms*)))
+(defparameter *ff* (cando-sys:from-string *ff-in-str*))
+
+
+(defparameter *types-in-str* (as-string (chem:get-types *parms*)))
+
+(defparameter *types-from-str* (cando-sys:from-string *types-in-str*))
+
+
+(progn
+  (defparameter *h* (make-cxx-object 'chem:atom :name 'H1 :element 'chem-keyword::H))
+  (defparameter *cl* (make-cxx-object 'chem:atom :name 'CL1 :element 'chem-keyword::|Cl|))
+  (defparameter *r* (make-cxx-object 'chem:residue))
+  (defparameter *m* (make-cxx-object 'chem:molecule))
+  (chem:add-matter *m* *r*)
+  (chem:add-atom *r* *h*)
+  (chem:add-atom *r* *cl*)
+  (chem:bond-to-single *h* *cl*)
+  )
+
+(defparameter *s* (as-string *m*))
+(defparameter *m1* (cando-sys:from-string *s*))
+
+
+
+
+
+(untrace)
+(trace clos:ensure-generic-function-using-class)
+(clos:ensure-generic-function-using-class nil 'foo)
+
+(trace (clos:ensure-generic-function-using-class :break t))
+(apropos "ensure-generic-function-u
+
+(print "Hello")
