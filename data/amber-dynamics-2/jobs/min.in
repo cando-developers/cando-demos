@@ -1,0 +1,16 @@
+minimisation
+ &cntrl
+   imin = 1, ntmin = 2,
+   maxcyc = 10000,
+   ntpr = 20, ntwe = 20,
+   ntb = 1,
+   ntr = 1, restraint_wt = 5.00,
+   restraintmask='!:WAT & !@H=',
+
+   icfe = 1, ifsc = 1, clambda = 0.5, scalpha = 0.5, scbeta = 12.0,
+   logdvdl = 0,
+   timask1 = ':1', timask2 = ':2',
+   scmask1 = ':1@C0,H24,H25,H26,C2,C3,H27,H28,H29,H30,H31,H32', scmask2 = ':2@H36,H39,H40'
+ /
+ &ewald
+ / 

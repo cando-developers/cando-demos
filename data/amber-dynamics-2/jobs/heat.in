@@ -1,0 +1,32 @@
+heating
+ &cntrl
+   imin = 0, nstlim = 100000, irest = 0, ntx = 1, dt = 0.001,
+   nmropt = 1,
+   ntt = 3, temp0 = 300.0, gamma_ln = 2.0, ig = -1,
+   tempi = 5.0, tautp = 1.0,
+   vlimit = 20,
+   ntb = 1,
+   ntc = 2, ntf = 1,
+   ioutfm = 1, iwrap = 1,
+   ntwe = 1000, ntwx = 1000, ntpr = 1000, ntwr = 50000,
+
+   ntr = 1, restraint_wt = 5.00,
+   restraintmask='!:WAT & !@H=',
+
+   icfe = 1, ifsc = 1, clambda = 0.5, scalpha = 0.5, scbeta = 12.0,
+   logdvdl = 0,
+   timask1 = ':1', timask2 = ':2',
+   scmask1 = ':1@C0,H24,H25,H26,C2,C3,H27,H28,H29,H30,H31,H32', scmask2 = ':2@H36,H39,H40'
+ /
+ &ewald
+ / 
+
+ &wt
+   type='TEMP0',
+   istep1 = 0, istep2 = 8000,                                      
+   value1 = 5.0, value2 = 300.0
+ /
+
+ &wt type = 'END'
+ /
+
