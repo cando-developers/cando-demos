@@ -1,0 +1,55 @@
+2020-08-12 14:54:03 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-12 14:54:03 [INFO] <KERNEL> Parsing connection file /home/app/.local/share/jupyter/runtime/kernel-2871f6b3-71f2-4f77-afa9-d4f2d2b85dc6.json
+2020-08-12 14:54:03 [INFO] <KERNEL> (OBJ (shell_port . 60433)
+                                     (iopub_port . 44335) (stdin_port . 34859)
+                                     (control_port . 54337) (hb_port . 32895)
+                                     (ip . 127.0.0.1)
+                                     (key . e32a88bf-eeb768e592672bd2bb9be276)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-12 14:54:03 [INFO] <MAC> Starting message authentification
+2020-08-12 14:54:03 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-12 14:54:03 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:32895
+2020-08-12 14:54:03 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:44335
+2020-08-12 14:54:03 [INFO] <HB-CHANNEL> Starting thread
+2020-08-12 14:54:03 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:60433
+2020-08-12 14:54:03 [INFO] <SHELL-CHANNEL> Starting thread
+2020-08-12 14:54:03 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:34859
+2020-08-12 14:54:03 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:54337
+2020-08-12 14:54:03 [INFO] <CONTROL-CHANNEL> Starting thread
+2020-08-12 14:54:03 [INFO] <HISTORY> Starting history
+2020-08-12 14:54:03 [INFO] <KERNEL> Loading CLHS map
+2020-08-12 14:54:03 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber18/
+2020-08-12 14:54:04 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-12 14:54:04 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-12 14:55:34 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-12 14:55:34 [INFO] <SHELL-CHANNEL> Received comm_info_request message
+2020-08-12 14:55:34 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-12 14:55:34 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-12 15:29:05 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-12 15:29:05 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-12 15:29:05 [INFO] <SHELL-CHANNEL> Received comm_info_request message
+2020-08-12 15:29:05 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-12 15:47:21 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:47:21 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:47:45 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:47:45 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:47:50 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:47:50 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:47:54 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:47:54 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:52:40 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:52:40 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:52:42 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:52:42 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:52:44 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:52:44 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:52:46 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:52:46 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:52:47 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:52:47 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:56:24 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:56:24 [INFO] <KERNEL> Handling execute_request message
+2020-08-12 15:57:15 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 15:57:15 [INFO] <KERNEL> Handling execute_request message

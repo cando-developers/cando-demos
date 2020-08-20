@@ -1,0 +1,38 @@
+2020-08-12 03:11:13 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-12 03:11:13 [INFO] <KERNEL> Parsing connection file /home/app/.local/share/jupyter/runtime/kernel-74bcbb68-441d-4707-861e-468c7de0ba88.json
+2020-08-12 03:11:13 [INFO] <KERNEL> (OBJ (shell_port . 44041)
+                                     (iopub_port . 39867) (stdin_port . 33727)
+                                     (control_port . 59217) (hb_port . 55451)
+                                     (ip . 127.0.0.1)
+                                     (key . b2dfbbd3-27f789ef824038b5b3ded3d0)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-12 03:11:13 [INFO] <MAC> Starting message authentification
+2020-08-12 03:11:13 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-12 03:11:13 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:55451
+2020-08-12 03:11:13 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:39867
+2020-08-12 03:11:13 [INFO] <HB-CHANNEL> Starting thread
+2020-08-12 03:11:13 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:44041
+2020-08-12 03:11:13 [INFO] <SHELL-CHANNEL> Starting thread
+2020-08-12 03:11:13 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:33727
+2020-08-12 03:11:13 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:59217
+2020-08-12 03:11:13 [INFO] <CONTROL-CHANNEL> Starting thread
+2020-08-12 03:11:13 [INFO] <HISTORY> Starting history
+2020-08-12 03:11:13 [INFO] <KERNEL> Loading CLHS map
+2020-08-12 03:11:13 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber18/
+2020-08-12 03:11:13 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-12 03:11:13 [INFO] <CONTROL-CHANNEL> Received shutdown_request message
+2020-08-12 03:11:13 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-12 03:11:13 [INFO] <KERNEL> Handling shutdown_request message
+2020-08-12 03:11:13 [INFO] <KERNEL> Stopping common-lisp kernel
+2020-08-12 03:11:13 [INFO] <HB-CHANNEL> Stopping thread
+2020-08-12 03:11:14 [INFO] <HB-CHANNEL> Stopping channel
+2020-08-12 03:11:14 [INFO] <IOPUB-CHANNEL> Stopping channel
+2020-08-12 03:11:14 [INFO] <SHELL-CHANNEL> Stopping thread
+2020-08-12 03:11:14 [INFO] <SHELL-CHANNEL> Stopping channel
+2020-08-12 03:11:14 [INFO] <STDIN-CHANNEL> Stopping channel
+2020-08-12 03:11:14 [INFO] <CONTROL-CHANNEL> Stopping thread
+2020-08-12 03:11:14 [INFO] <CONTROL-CHANNEL> Stopping channel
+2020-08-12 03:11:14 [INFO] <MAC> Stopping message authentification
+2020-08-12 03:11:14 [INFO] <HISTORY> Stopping history

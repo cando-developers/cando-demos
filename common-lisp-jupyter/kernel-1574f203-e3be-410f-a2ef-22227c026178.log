@@ -1,0 +1,58 @@
+2020-08-17 22:57:40 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-17 22:57:40 [INFO] <KERNEL> Parsing connection file /Users/yonkunas/Library/Jupyter/runtime/kernel-1574f203-e3be-410f-a2ef-22227c026178.json
+2020-08-17 22:57:40 [INFO] <KERNEL> (OBJ (shell_port . 55866)
+                                     (iopub_port . 55867) (stdin_port . 55868)
+                                     (control_port . 55870) (hb_port . 55869)
+                                     (ip . 127.0.0.1)
+                                     (key . bac37495-b692394775c48cdf0935585d)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-17 22:57:40 [INFO] <MAC> Starting message authentification
+2020-08-17 22:57:40 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-17 22:57:40 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:55869
+2020-08-17 22:57:40 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:55867
+2020-08-17 22:57:40 [INFO] <HB-CHANNEL> Starting thread
+2020-08-17 22:57:40 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:55866
+2020-08-17 22:57:40 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:55868
+2020-08-17 22:57:40 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:55870
+2020-08-17 22:57:40 [INFO] <HISTORY> Starting history
+2020-08-17 22:57:40 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber/
+2020-08-17 22:57:40 [INFO] <KERNEL> Waiting for control message
+2020-08-17 22:57:40 [INFO] <KERNEL> Loading CLHS map
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:40 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-17 22:57:53 [INFO] <KERNEL> Handling execute_request message
+2020-08-17 22:59:39 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 22:59:39 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 22:59:40 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 22:59:40 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 22:59:40 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 22:59:41 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 22:59:47 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 23:00:13 [INFO] <KERNEL> Handling complete_request message
+2020-08-17 23:00:39 [INFO] <KERNEL> Handling execute_request message
+2020-08-17 23:00:56 [INFO] <KERNEL> Handling shutdown_request message
+2020-08-17 23:00:56 [INFO] <KERNEL> Stopping common-lisp kernel
+2020-08-17 23:00:56 [INFO] <HB-CHANNEL> Stopping thread
+2020-08-17 23:00:56 [INFO] <HB-CHANNEL> Stopping channel
+2020-08-17 23:00:56 [INFO] <IOPUB-CHANNEL> Stopping channel
+2020-08-17 23:00:56 [INFO] <SHELL-CHANNEL> Stopping channel
+2020-08-17 23:00:56 [INFO] <STDIN-CHANNEL> Stopping channel
+2020-08-17 23:00:56 [INFO] <CONTROL-CHANNEL> Stopping channel
+2020-08-17 23:00:56 [INFO] <MAC> Stopping message authentification
+2020-08-17 23:00:56 [INFO] <HISTORY> Stopping history

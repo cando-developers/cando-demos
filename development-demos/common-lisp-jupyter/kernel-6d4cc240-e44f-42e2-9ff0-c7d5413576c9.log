@@ -1,0 +1,32 @@
+2020-08-17 15:29:15 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-17 15:29:15 [INFO] <KERNEL> Parsing connection file /Users/yonkunas/Library/Jupyter/runtime/kernel-6d4cc240-e44f-42e2-9ff0-c7d5413576c9.json
+2020-08-17 15:29:15 [INFO] <KERNEL> (OBJ (shell_port . 51326)
+                                     (iopub_port . 51327) (stdin_port . 51328)
+                                     (control_port . 51330) (hb_port . 51329)
+                                     (ip . 127.0.0.1)
+                                     (key . 491b358e-6019211781bc9c8c1022f2e6)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-17 15:29:15 [INFO] <MAC> Starting message authentification
+2020-08-17 15:29:15 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-17 15:29:15 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:51329
+2020-08-17 15:29:15 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:51327
+2020-08-17 15:29:15 [INFO] <HB-CHANNEL> Starting thread
+2020-08-17 15:29:15 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:51326
+2020-08-17 15:29:15 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:51328
+2020-08-17 15:29:15 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:51330
+2020-08-17 15:29:15 [INFO] <HISTORY> Starting history
+2020-08-17 15:29:15 [INFO] <KERNEL> Loading CLHS map
+2020-08-17 15:29:15 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber/
+2020-08-17 15:29:15 [INFO] <KERNEL> Waiting for control message
+2020-08-17 15:29:15 [INFO] <KERNEL> Handling shutdown_request message
+2020-08-17 15:29:15 [INFO] <KERNEL> Stopping common-lisp kernel
+2020-08-17 15:29:15 [INFO] <HB-CHANNEL> Stopping thread
+2020-08-17 15:29:15 [INFO] <HB-CHANNEL> Stopping channel
+2020-08-17 15:29:15 [INFO] <IOPUB-CHANNEL> Stopping channel
+2020-08-17 15:29:15 [INFO] <SHELL-CHANNEL> Stopping channel
+2020-08-17 15:29:15 [INFO] <STDIN-CHANNEL> Stopping channel
+2020-08-17 15:29:15 [INFO] <CONTROL-CHANNEL> Stopping channel
+2020-08-17 15:29:15 [INFO] <MAC> Stopping message authentification
+2020-08-17 15:29:15 [INFO] <HISTORY> Stopping history

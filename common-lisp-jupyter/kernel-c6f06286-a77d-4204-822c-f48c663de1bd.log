@@ -1,0 +1,27 @@
+2020-08-12 02:52:30 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-12 02:52:30 [INFO] <KERNEL> Parsing connection file /home/app/.local/share/jupyter/runtime/kernel-c6f06286-a77d-4204-822c-f48c663de1bd.json
+2020-08-12 02:52:30 [INFO] <KERNEL> (OBJ (shell_port . 48651)
+                                     (iopub_port . 38871) (stdin_port . 60995)
+                                     (control_port . 56495) (hb_port . 33671)
+                                     (ip . 127.0.0.1)
+                                     (key . e65ecd68-38e5e33aaa39fa33ce1fc14d)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-12 02:52:30 [INFO] <MAC> Starting message authentification
+2020-08-12 02:52:30 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-12 02:52:30 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:33671
+2020-08-12 02:52:30 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:38871
+2020-08-12 02:52:30 [INFO] <HB-CHANNEL> Starting thread
+2020-08-12 02:52:30 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:48651
+2020-08-12 02:52:30 [INFO] <SHELL-CHANNEL> Starting thread
+2020-08-12 02:52:30 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:60995
+2020-08-12 02:52:30 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:56495
+2020-08-12 02:52:30 [INFO] <CONTROL-CHANNEL> Starting thread
+2020-08-12 02:52:30 [INFO] <HISTORY> Starting history
+2020-08-12 02:52:30 [INFO] <KERNEL> Loading CLHS map
+2020-08-12 02:52:30 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber18/
+2020-08-12 02:52:30 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-12 02:52:30 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-12 02:55:53 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-12 02:55:55 [INFO] <KERNEL> Handling execute_request message

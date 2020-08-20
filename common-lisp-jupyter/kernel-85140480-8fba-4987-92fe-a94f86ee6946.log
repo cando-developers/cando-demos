@@ -1,0 +1,176 @@
+2020-08-10 21:13:36 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-10 21:13:36 [INFO] <KERNEL> Parsing connection file /home/app/.local/share/jupyter/runtime/kernel-85140480-8fba-4987-92fe-a94f86ee6946.json
+2020-08-10 21:13:36 [INFO] <KERNEL> (OBJ (shell_port . 52323)
+                                     (iopub_port . 39407) (stdin_port . 37781)
+                                     (control_port . 33363) (hb_port . 46421)
+                                     (ip . 127.0.0.1)
+                                     (key . b8543c4f-2b897035ac9d22381814306f)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-10 21:13:36 [INFO] <MAC> Starting message authentification
+2020-08-10 21:13:36 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-10 21:13:36 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:46421
+2020-08-10 21:13:36 [INFO] <HB-CHANNEL> Starting thread
+2020-08-10 21:13:36 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:39407
+2020-08-10 21:13:36 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:52323
+2020-08-10 21:13:36 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:37781
+2020-08-10 21:13:36 [INFO] <SHELL-CHANNEL> Starting thread
+2020-08-10 21:13:36 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:33363
+2020-08-10 21:13:36 [INFO] <HISTORY> Starting history
+2020-08-10 21:13:36 [INFO] <CONTROL-CHANNEL> Starting thread
+2020-08-10 21:13:36 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber18/
+2020-08-10 21:13:36 [INFO] <KERNEL> Loading CLHS map
+2020-08-10 21:13:36 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-10 21:13:36 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-10 21:13:36 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-10 21:13:36 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-10 21:13:36 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-10 21:13:36 [INFO] <SHELL-CHANNEL> Received comm_info_request message
+2020-08-10 21:13:36 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-10 21:13:36 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-10 21:13:46 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:13:46 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:13:51 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:13:51 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:13:54 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:13:54 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:13:57 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:13:57 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:14:13 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:14:13 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:14:35 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:14:35 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:15:24 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:15:24 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:16:22 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:22 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:28 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:16:28 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:16:38 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:38 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:39 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:39 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:41 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:41 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:41 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:41 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:42 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:42 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:42 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:42 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:43 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:43 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:43 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:43 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:44 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:44 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:44 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:44 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:44 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:44 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:44 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:44 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:44 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:44 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:45 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:45 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:53 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:53 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:53 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:53 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:54 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:54 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:55 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:55 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:56 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:56 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:56 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:56 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:56 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:56 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:57 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:57 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:57 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:57 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:57 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:57 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:57 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:57 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:57 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:57 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:57 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:57 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:58 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:58 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:58 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:58 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:58 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:58 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:58 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:58 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:16:58 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:16:58 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:00 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:00 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:00 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:00 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:01 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:01 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:02 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:02 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:02 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:02 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:02 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:02 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:02 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:02 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:03 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:03 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:04 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:04 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:18 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:18 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:19 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:19 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:19 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:19 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:19 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:19 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:19 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:19 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:20 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:20 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:20 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:20 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:20 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:20 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:17:22 [INFO] <SHELL-CHANNEL> Received complete_request message
+2020-08-10 21:17:22 [INFO] <KERNEL> Handling complete_request message
+2020-08-10 21:18:57 [INFO] <SHELL-CHANNEL> Received inspect_request message
+2020-08-10 21:18:57 [INFO] <KERNEL> Handling inspect_request message
+2020-08-10 21:19:04 [INFO] <SHELL-CHANNEL> Received inspect_request message
+2020-08-10 21:19:04 [INFO] <KERNEL> Handling inspect_request message
+2020-08-10 21:19:07 [INFO] <SHELL-CHANNEL> Received inspect_request message
+2020-08-10 21:19:07 [INFO] <KERNEL> Handling inspect_request message
+2020-08-10 21:19:15 [INFO] <SHELL-CHANNEL> Received inspect_request message
+2020-08-10 21:19:15 [INFO] <KERNEL> Handling inspect_request message
+2020-08-10 21:26:05 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-10 21:26:05 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-10 21:26:05 [INFO] <SHELL-CHANNEL> Received comm_info_request message
+2020-08-10 21:26:05 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-10 21:27:03 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:27:03 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:31:02 [INFO] <CONTROL-CHANNEL> Received shutdown_request message
+2020-08-10 21:31:02 [INFO] <KERNEL> Handling shutdown_request message
+2020-08-10 21:31:02 [INFO] <KERNEL> Stopping common-lisp kernel
+2020-08-10 21:31:02 [INFO] <HB-CHANNEL> Stopping thread
+2020-08-10 21:31:02 [INFO] <HB-CHANNEL> Stopping channel
+2020-08-10 21:31:02 [INFO] <IOPUB-CHANNEL> Stopping channel
+2020-08-10 21:31:02 [INFO] <SHELL-CHANNEL> Stopping thread
+2020-08-10 21:31:02 [INFO] <SHELL-CHANNEL> Stopping channel
+2020-08-10 21:31:02 [INFO] <STDIN-CHANNEL> Stopping channel
+2020-08-10 21:31:02 [INFO] <CONTROL-CHANNEL> Stopping thread
+2020-08-10 21:31:02 [INFO] <CONTROL-CHANNEL> Stopping channel
+2020-08-10 21:31:02 [INFO] <MAC> Stopping message authentification
+2020-08-10 21:31:02 [INFO] <HISTORY> Stopping history

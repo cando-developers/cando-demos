@@ -1,0 +1,72 @@
+2020-08-18 13:55:34 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-18 13:55:34 [INFO] <KERNEL> Parsing connection file /Users/yonkunas/Library/Jupyter/runtime/kernel-665cea2b-5e2b-4b11-bcf0-bc9b91a82ddf.json
+2020-08-18 13:55:34 [INFO] <KERNEL> (OBJ (shell_port . 51561)
+                                     (iopub_port . 51562) (stdin_port . 51563)
+                                     (control_port . 51565) (hb_port . 51564)
+                                     (ip . 127.0.0.1)
+                                     (key . 3ab7bfe8-8d43ed1eba3db8dea00b1bfd)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-18 13:55:35 [INFO] <MAC> Starting message authentification
+2020-08-18 13:55:35 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-18 13:55:35 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:51564
+2020-08-18 13:55:35 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:51562
+2020-08-18 13:55:35 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:51561
+2020-08-18 13:55:35 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:51563
+2020-08-18 13:55:35 [INFO] <HB-CHANNEL> Starting thread
+2020-08-18 13:55:35 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:51565
+2020-08-18 13:55:35 [INFO] <HISTORY> Starting history
+2020-08-18 13:55:35 [INFO] <KERNEL> Loading CLHS map
+2020-08-18 13:55:35 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber/
+2020-08-18 13:55:35 [INFO] <KERNEL> Waiting for control message
+2020-08-18 13:55:35 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-18 13:55:35 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-18 13:55:35 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-18 13:55:35 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-18 13:55:51 [INFO] <KERNEL> Handling execute_request message
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling execute_request message
+2020-08-18 13:55:57 [INFO] <NULL> Setting up the *remote-call-thread-queue* and *remote-call-thread*
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_msg message
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_msg message
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 13:55:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 14:03:05 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-18 14:03:06 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-18 14:03:13 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-18 14:10:47 [INFO] <KERNEL> Handling execute_request message
+2020-08-18 14:10:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-18 14:18:29 [INFO] <KERNEL> Handling execute_request message
+2020-08-18 14:18:30 [INFO] <NULL> In add-structure  (loaded self) -> NIL
+2020-08-18 14:18:30 [INFO] <NULL> entered %load-data NIL
+2020-08-18 14:18:30 [INFO] <NGLWIDGET> entered %remote-call loadFile
+2020-08-18 14:18:30 [INFO] <NULL> About to make-remote-call-callback before-loaded
+2020-08-18 14:18:30 [INFO] <NULL> About to make-remote-call-callback after-loaded
+2020-08-18 14:18:30 [INFO] <NULL> leaving %remote-call loadFile
+2020-08-18 14:18:30 [INFO] <NULL> leaving %load-data
+2020-08-18 14:18:30 [INFO] <KERNEL> Handling comm_close
+2020-08-18 14:18:51 [INFO] <KERNEL> Handling complete_request message
+2020-08-18 14:18:57 [INFO] <KERNEL> Handling execute_request message
+2020-08-18 14:18:57 [INFO] <NULL> In add-structure  (loaded self) -> NIL
+2020-08-18 14:18:57 [INFO] <NULL> entered %load-data NIL
+2020-08-18 14:18:57 [INFO] <NGLWIDGET> entered %remote-call loadFile
+2020-08-18 14:18:57 [INFO] <NULL> About to make-remote-call-callback before-loaded
+2020-08-18 14:18:57 [INFO] <NULL> About to make-remote-call-callback after-loaded
+2020-08-18 14:18:57 [INFO] <NULL> leaving %remote-call loadFile
+2020-08-18 14:18:57 [INFO] <NULL> leaving %load-data
+2020-08-18 14:18:57 [INFO] <KERNEL> Handling comm_close
+2020-08-18 14:44:33 [INFO] <KERNEL> Handling shutdown_request message
+2020-08-18 14:44:33 [INFO] <KERNEL> Stopping common-lisp kernel
+2020-08-18 14:44:33 [INFO] <HB-CHANNEL> Stopping thread
+2020-08-18 14:44:33 [INFO] <HB-CHANNEL> Stopping channel
+2020-08-18 14:44:33 [INFO] <IOPUB-CHANNEL> Stopping channel
+2020-08-18 14:44:33 [INFO] <SHELL-CHANNEL> Stopping channel
+2020-08-18 14:44:33 [INFO] <STDIN-CHANNEL> Stopping channel
+2020-08-18 14:44:33 [INFO] <CONTROL-CHANNEL> Stopping channel
+2020-08-18 14:44:33 [INFO] <MAC> Stopping message authentification
+2020-08-18 14:44:33 [INFO] <HISTORY> Stopping history

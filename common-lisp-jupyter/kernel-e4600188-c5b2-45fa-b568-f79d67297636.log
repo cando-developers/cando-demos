@@ -1,0 +1,456 @@
+2020-08-10 21:32:06 [INFO] <KERNEL> Starting common-lisp kernel
+2020-08-10 21:32:06 [INFO] <KERNEL> Parsing connection file /home/app/.local/share/jupyter/runtime/kernel-e4600188-c5b2-45fa-b568-f79d67297636.json
+2020-08-10 21:32:06 [INFO] <KERNEL> (OBJ (shell_port . 48781)
+                                     (iopub_port . 43235) (stdin_port . 52171)
+                                     (control_port . 46489) (hb_port . 37915)
+                                     (ip . 127.0.0.1)
+                                     (key . a9041c5f-f73ee4cea2facccca0a2ce93)
+                                     (transport . tcp)
+                                     (signature_scheme . hmac-sha256)
+                                     (kernel_name . cando))
+2020-08-10 21:32:06 [INFO] <MAC> Starting message authentification
+2020-08-10 21:32:06 [INFO] <MAC> Using signature scheme hmac-sha256 for message signing.
+2020-08-10 21:32:06 [INFO] <HB-CHANNEL> Starting channel on tcp://127.0.0.1:37915
+2020-08-10 21:32:06 [INFO] <HB-CHANNEL> Starting thread
+2020-08-10 21:32:06 [INFO] <IOPUB-CHANNEL> Starting channel on tcp://127.0.0.1:43235
+2020-08-10 21:32:06 [INFO] <SHELL-CHANNEL> Starting channel on tcp://127.0.0.1:48781
+2020-08-10 21:32:06 [INFO] <SHELL-CHANNEL> Starting thread
+2020-08-10 21:32:06 [INFO] <STDIN-CHANNEL> Starting channel on tcp://127.0.0.1:52171
+2020-08-10 21:32:06 [INFO] <CONTROL-CHANNEL> Starting channel on tcp://127.0.0.1:46489
+2020-08-10 21:32:06 [INFO] <CONTROL-CHANNEL> Starting thread
+2020-08-10 21:32:06 [INFO] <HISTORY> Starting history
+2020-08-10 21:32:06 [INFO] <KERNEL> Loading CLHS map
+2020-08-10 21:32:06 [INFO] <KERNEL> Setting amber host pathname translation -> /opt/amber18/
+2020-08-10 21:32:06 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-10 21:32:06 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-10 21:32:06 [INFO] <SHELL-CHANNEL> Received kernel_info_request message
+2020-08-10 21:32:06 [INFO] <SHELL-CHANNEL> Received comm_info_request message
+2020-08-10 21:32:06 [INFO] <KERNEL> Handling kernel_info_request message
+2020-08-10 21:32:06 [INFO] <KERNEL> Handling comm_info_request message
+2020-08-10 21:33:04 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:33:04 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:33:56 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:33:56 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:34:05 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:34:05 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:34:10 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:34:10 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:34:46 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:34:46 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:34:50 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:34:50 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:35:04 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:35:04 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:35:11 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:35:11 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:35:19 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:35:19 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:35:24 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:35:24 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:35:44 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:35:44 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:36:07 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:36:07 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:36:17 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:36:17 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:36:17 [INFO] <NULL> Setting up the *remote-call-thread-queue* and *remote-call-thread*
+2020-08-10 21:36:17 [INFO] <NULL> In add-structure  (loaded self) -> NIL
+2020-08-10 21:36:17 [INFO] <NULL> entered %load-data NIL
+2020-08-10 21:36:17 [INFO] <NULL> Generating mol2 as string
+
+2020-08-10 21:36:17 [INFO] <NGLWIDGET> entered %remote-call loadFile
+2020-08-10 21:36:17 [INFO] <NULL> About to make-remote-call-callback before-loaded
+2020-08-10 21:36:17 [INFO] <NULL> About to make-remote-call-callback after-loaded
+2020-08-10 21:36:17 [INFO] <NULL> leaving %remote-call loadFile
+2020-08-10 21:36:17 [INFO] <NULL> leaving %load-data
+2020-08-10 21:36:17 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:17 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:17 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:17 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_close message
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_close
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <NGLWIDGET> Handling custom message request_loaded
+2020-08-10 21:36:18 [INFO] <NULL> entered on-loaded - firing before-loaded callbacks new -> NIL
+2020-08-10 21:36:18 [INFO] <NULL> entered on-loaded - firing before-loaded callbacks new -> T
+2020-08-10 21:36:18 [INFO] <NULL> %fire-callbacks entered in process #<PROCESS TOP-LEVEL @0xa4c3811 (Running)>
+  callbacks: (("loadFile" "before-loaded"))
+2020-08-10 21:36:18 [INFO] <NULL> Done %fire-callbacks
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <NGLWIDGET> Handling custom message updateIDs
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <NGLWIDGET> Handling custom message async_message
+2020-08-10 21:36:18 [INFO] <NGLWIDGET> Setting event
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:18 [INFO] <NGLWIDGET> Handling custom message request_repr_dict
+2020-08-10 21:36:18 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:18 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:19 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:19 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:19 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:19 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:19 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:19 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:19 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:19 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:24 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:24 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:25 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:25 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:25 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:25 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:25 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:25 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:31 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:31 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:32 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:32 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:41 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:41 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:48 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:48 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:49 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:49 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:49 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:49 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:49 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:49 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:49 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:49 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:49 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:49 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:49 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:49 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:50 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:50 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:56 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:56 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:59 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:59 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:59 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:59 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:59 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:59 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:36:59 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:36:59 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:00 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:00 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:00 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:00 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:00 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:00 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:14 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:37:14 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:37:20 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:37:20 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received execute_request message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling execute_request message
+2020-08-10 21:37:30 [INFO] <NULL> In add-structure  (loaded self) -> NIL
+2020-08-10 21:37:30 [INFO] <NULL> entered %load-data NIL
+2020-08-10 21:37:30 [INFO] <NULL> Generating mol2 as string
+
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> entered %remote-call loadFile
+2020-08-10 21:37:30 [INFO] <NULL> About to make-remote-call-callback before-loaded
+2020-08-10 21:37:30 [INFO] <NULL> About to make-remote-call-callback after-loaded
+2020-08-10 21:37:30 [INFO] <NULL> leaving %remote-call loadFile
+2020-08-10 21:37:30 [INFO] <NULL> leaving %load-data
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> entered %remote-call addShape
+2020-08-10 21:37:30 [INFO] <NULL> About to make-remote-call-callback before-loaded
+2020-08-10 21:37:30 [INFO] <NULL> About to make-remote-call-callback after-loaded
+2020-08-10 21:37:30 [INFO] <NULL> leaving %remote-call addShape
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_close message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_close
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message request_loaded
+2020-08-10 21:37:30 [INFO] <NULL> entered on-loaded - firing before-loaded callbacks new -> NIL
+2020-08-10 21:37:30 [INFO] <NULL> entered on-loaded - firing before-loaded callbacks new -> T
+2020-08-10 21:37:30 [INFO] <NULL> %fire-callbacks entered in process #<PROCESS TOP-LEVEL @0xa4c3811 (Running)>
+  callbacks: (("addShape" "before-loaded") ("loadFile" "before-loaded"))
+2020-08-10 21:37:30 [INFO] <NULL> Done %fire-callbacks
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message updateIDs
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message request_repr_dict
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message async_message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Setting event
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message request_repr_dict
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message request_repr_dict
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:30 [INFO] <NGLWIDGET> Handling custom message request_repr_dict
+2020-08-10 21:37:30 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:30 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:42 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:42 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:43 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:43 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:44 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:44 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:45 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:45 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:46 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:46 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:47 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:47 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:47 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:47 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:47 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:47 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:37:47 [INFO] <SHELL-CHANNEL> Received comm_msg message
+2020-08-10 21:37:47 [INFO] <KERNEL> Handling comm_msg message
+2020-08-10 21:38:42 [INFO] <CONTROL-CHANNEL> Received shutdown_request message
+2020-08-10 21:38:42 [INFO] <KERNEL> Handling shutdown_request message
+2020-08-10 21:38:42 [INFO] <KERNEL> Stopping common-lisp kernel
+2020-08-10 21:38:42 [INFO] <HB-CHANNEL> Stopping thread
+2020-08-10 21:38:42 [INFO] <HB-CHANNEL> Stopping channel
+2020-08-10 21:38:42 [INFO] <IOPUB-CHANNEL> Stopping channel
+2020-08-10 21:38:42 [INFO] <SHELL-CHANNEL> Stopping thread
+2020-08-10 21:38:42 [INFO] <SHELL-CHANNEL> Stopping channel
+2020-08-10 21:38:42 [INFO] <STDIN-CHANNEL> Stopping channel
+2020-08-10 21:38:42 [INFO] <CONTROL-CHANNEL> Stopping thread
+2020-08-10 21:38:42 [INFO] <CONTROL-CHANNEL> Stopping channel
+2020-08-10 21:38:42 [INFO] <MAC> Stopping message authentification
+2020-08-10 21:38:42 [INFO] <HISTORY> Stopping history
