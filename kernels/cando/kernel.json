@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "/opt/clasp/bin/fork-client",
+    "{connection_file}"
+  ],
+  "display_name": "cando",
+  "interrupt_mode": "message",
+  "language": "lisp"
+}

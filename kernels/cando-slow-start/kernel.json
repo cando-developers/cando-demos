@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/opt/clasp/bin/ccando-boehm",
+    "-f", "no-auto-lparallel",
+    "--eval", "(ql:quickload :cando-jupyter)",
+    "--eval", "(jupyter:run-kernel 'cando-jupyter:kernel #\"{connection_file}\")"
+  ],
+  "display_name": "cando-slow-start",
+  "interrupt_mode": "message",
+  "language": "lisp"
+}
