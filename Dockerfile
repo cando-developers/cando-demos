@@ -29,6 +29,7 @@ COPY . demos/
 RUN chown -R ${NB_UID} demos/ && \
     chgrp -R ${NB_USER} demos/
 
+WORKDIR ${HOME}/demos/
 USER ${NB_USER}
 
 RUN pip install notebook jupyterlab && \
