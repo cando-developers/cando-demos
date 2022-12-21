@@ -8,7 +8,7 @@ ARG NB_UID=1000
 ENV DEBIAN_FRONTEND=noninteractive
 ENV USER ${NB_USER}
 ENV HOME /home/${NB_USER}
-ENV PATH "${HOME}/.local/bin:${PATH}"
+ENV PATH "${HOME}/.local/bin:${HOME}/miniconda3/bin:${PATH}"
 
 RUN apt-get update && \
     apt-get upgrade -y && \
@@ -32,5 +32,10 @@ RUN chown -R ${NB_UID} demos/ && \
 WORKDIR ${HOME}/demos/
 USER ${NB_USER}
 
-RUN pip install notebook jupyterlab && \
-    cando-user-install
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+RUN chmod +x Miniconda3-latest-Linux-x86_64.sh && \
+    ./Miniconda3-latest-Linux-x86_64.sh -b && \
+    rm -f Miniconda3-latest-Linux-x86_64.sh
+
+RUN conda install -y -c conda-forge jupyterlab ambertools && \
+   cando-user-install
