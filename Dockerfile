@@ -33,6 +33,4 @@ WORKDIR ${HOME}/demos/
 USER ${NB_USER}
 
 RUN pip install notebook jupyterlab && \
-    jupyter-labextension install cytoscape-clj kekule-clj ngl-clj \
-      resizable-box-clj @jupyter-widgets/jupyterlab-manager \
-      jupyterlab_templates jupyterlab-debugger-restarts jupyterlab-molviewer
+    cando-user-install
